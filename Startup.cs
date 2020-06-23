@@ -23,6 +23,8 @@ namespace DutchTreat
         {
             app.UseDefaultFiles();          //finds the index and runs it as default without the localhost:8888/index.html
             app.UseStaticFiles();           //only use static files from the wwwroot directory. 
+            app.UseNodeModules();
+
         }
     }
 }
