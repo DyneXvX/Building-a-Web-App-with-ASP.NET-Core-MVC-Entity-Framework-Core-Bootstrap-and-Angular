@@ -1,0 +1,31 @@
+﻿
+@*
+@model DutchTreat.ViewModels.ContactViewModel
+    however instead of typing all this we can head back to our View Imports page and add. DutchTreat.ViewModels
+*@
+ @model ContactViewModel   
+@{
+    ViewBag.Title = "Contact Us";
+}
+<form method="post">
+    <label asp-for="Name">Your Name:</label>
+    <br/>
+    @*
+    <input name="name"/> Removed because I can now use asp tagging
+    *@
+    <input asp-for="Name" />
+    <br/>
+    <label asp-for="Email">Email:</label>
+    <br/>
+    <input type="email" asp-for="Email"/>
+    <br/>
+    <label asp-for="Subject">Subject:</label>
+    <br/>
+    <input type="text" asp-for="Subject"/>
+    <br/>
+    <label asp-for="Message">Message:</label>
+    <br/>
+    <textarea rows="4" asp-for="Message"></textarea>
+    <br/>
+    <input type="submit" value="Send Message"/>
+</form>

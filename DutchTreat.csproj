@@ -13,6 +13,7 @@
     <EmbeddedResource Remove="wwwroot\node_modules\jquery\**" />
     <None Remove="wwwroot\node_modules\bootstrap\**" />
     <None Remove="wwwroot\node_modules\jquery\**" />
+    <None Include="node_modules\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -25,6 +26,7 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\node_modules\" />
+    <Folder Include="node_modules"/>
   </ItemGroup>
 
   <ProjectExtensions><VisualStudio><UserProperties package_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>

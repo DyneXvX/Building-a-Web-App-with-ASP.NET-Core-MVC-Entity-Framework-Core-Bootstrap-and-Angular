@@ -23,7 +23,7 @@ $(document).ready(function() {                  //this handles the weird timing 
             console.log("You clicked on " + $(this).text());
         });
 
-    $.re
+    
 
     var $loginToggle = $("#loginToggle");
     var $popupForm = $(".popup-form");
