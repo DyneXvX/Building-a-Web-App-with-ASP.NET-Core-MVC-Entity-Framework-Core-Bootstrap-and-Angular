@@ -1,31 +1,40 @@
-﻿
-@*
-@model DutchTreat.ViewModels.ContactViewModel
-    however instead of typing all this we can head back to our View Imports page and add. DutchTreat.ViewModels
+﻿@*
+    @model DutchTreat.ViewModels.ContactViewModel
+        however instead of typing all this we can head back to our View Imports page and add. DutchTreat.ViewModels
 *@
- @model ContactViewModel   
+@model ContactViewModel
 @{
     ViewBag.Title = "Contact Us";
 }
+@section Scripts{
+    <script src="~\node_modules\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js"></script>
+    <script src="~\node_modules\jquery-validation\dist\jquery.validate.min.js"></script>
+}
 <form method="post">
+    <div asp-validation-summary="ModelOnly"></div>
     <label asp-for="Name">Your Name:</label>
-    <br/>
+    <br />
     @*
-    <input name="name"/> Removed because I can now use asp tagging
+        <input name="name"/> Removed because I can now use asp tagging
     *@
     <input asp-for="Name" />
-    <br/>
+    <span asp-validation-for="Name"></span>
+    <br />
     <label asp-for="Email">Email:</label>
-    <br/>
-    <input type="email" asp-for="Email"/>
-    <br/>
+    <br />
+    <input type="email" asp-for="Email" />
+    <span asp-validation-for="Email"></span>
+    <br />
     <label asp-for="Subject">Subject:</label>
-    <br/>
-    <input type="text" asp-for="Subject"/>
-    <br/>
+    <br />
+    <input type="text" asp-for="Subject" />
+    <span asp-validation-for="Subject"></span>
+    <br />
     <label asp-for="Message">Message:</label>
-    <br/>
+    <br />
     <textarea rows="4" asp-for="Message"></textarea>
-    <br/>
-    <input type="submit" value="Send Message"/>
+    <span asp-validation-for="Message"></span>
+    <br />
+    <input type="submit" value="Send Message" />
+    <div>@ViewBag.UserMessage</div>
 </form>

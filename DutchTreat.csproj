@@ -5,28 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="wwwroot\node_modules\bootstrap\**" />
-    <Compile Remove="wwwroot\node_modules\jquery\**" />
-    <Content Remove="wwwroot\node_modules\bootstrap\**" />
-    <Content Remove="wwwroot\node_modules\jquery\**" />
-    <EmbeddedResource Remove="wwwroot\node_modules\bootstrap\**" />
-    <EmbeddedResource Remove="wwwroot\node_modules\jquery\**" />
-    <None Remove="wwwroot\node_modules\bootstrap\**" />
-    <None Remove="wwwroot\node_modules\jquery\**" />
-    <None Include="node_modules\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="wwwroot\index.html" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="OdeToCode.UseNodeModules" Version="3.0.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="wwwroot\node_modules\" />
-    <Folder Include="node_modules"/>
   </ItemGroup>
 
   <ProjectExtensions><VisualStudio><UserProperties package_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>

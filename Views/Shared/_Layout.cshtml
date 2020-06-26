@@ -23,18 +23,25 @@
         </ul>
             This was original without tag helpers*@
     <ul>
-        <li><a asp-controller="App" asp-action="Index">Home</a></li>
-        <li><a asp-controller="App" asp-action="Contact">Contact</a></li>
-        <li><a asp-controller="App" asp-action="About">About</a></li>
+        <li>
+            <a asp-controller="App" asp-action="Index">Home</a>
+        </li>
+        <li>
+            <a asp-controller="App" asp-action="Contact">Contact</a>
+        </li>
+        <li>
+            <a asp-controller="App" asp-action="About">About</a>
+        </li>
     </ul>
 </menu>
-    <section>
-        <h2>@ViewBag.Title</h2>
-        @RenderBody() <!--This builds the body around this information. -->
-    </section>
-    <footer>Copyright 2017 Dutch Treat LLC</footer>
+<section>
+    <h2>@ViewBag.Title</h2>
+    @RenderBody() <!--This builds the body around this information. -->
+</section>
+<footer>Copyright 2017 Dutch Treat LLC</footer>
 
-    <script src="~/node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="~/js/index.js"></script>
+<script src="~/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="~/js/index.js"></script>
+@RenderSection("scripts", false)
 </body>
 </html>
