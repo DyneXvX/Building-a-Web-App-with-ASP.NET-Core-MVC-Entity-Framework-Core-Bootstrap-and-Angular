@@ -1,4 +1,5 @@
-﻿body {
+﻿
+/*body {
     font-family: sans-serif
 }
 
@@ -15,28 +16,28 @@ label {
     font-size: 16px;
 }
 
-#theForm {                                    /*id tag css*/
+#theForm {                                    /*id tag css!1!
     background-color: lightgray;
 }
 
-#theForm input[type=submit] {               /*id tage with a specific choice*/
+#theForm input[type=submit] {               /*id tage with a specific choice!1!
     background-color: green;
     color: white;
 
 }
 
-ul.product-props {                          /*tag with class*/
+ul.product-props {                          /*tag with class!1!
     font-size: small;
 }
 
-ul.product-props li {                       /*tag with class and a specific attribute*/
+ul.product-props li {                       /*tag with class and a specific attribute!1!
     list-style-type: none 
 }
 
 .product-info {
     border: 1px solid gray;
     display: inline-block;
-    padding: 8px 2px;                       /*Top, bottom, right, left*/
+    padding: 8px 2px;                       /*Top, bottom, right, left!1!
     margin: 2px;
     width: 450px;
     background-color: lightgrey;
@@ -84,4 +85,4 @@ menu li:after {
 
 menu li:last-of-type:after {
     content: "";
-}
+}*/
