@@ -6,30 +6,42 @@
 <html>
 <head>
     <title>Dutch Treat: @ViewBag.Title</title>
-    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet"/>
-    <link href="~/css/site.css" rel="stylesheet"/>
-    <link rel="shortcut icon" href="img/VanGogh.jpg"/> <!--Icon for the title-->
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="img/VanGogh.jpg" /> <!--Icon for the title-->
 </head>
 
 <body>
-    <header class="container">
-        <h1>Welcome to Dutch Treat</h1>
-        <menu>
-            @*<ul>
+<header class="container-fluid">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md">
+        @*<ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/app/contact">Contact</a></li>
                 <li><a href="/app/about">About</a></li>
             </ul>
                 This was original without tag helpers*@
-            <ul>
-                <li><a asp-controller="App" asp-action="Index">Home</a></li>
-                <li><a asp-controller="App" asp-action="Contact">Contact</a></li>
-                <li><a asp-controller="App" asp-action="About">About</a></li>
+        <h1 class="navbar-brand"><i class="fa fa-paint-brush"></i>Welcome to Dutch Treat</h1>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#theMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="theMenu" class="navbar-collapse collapse justify-content-end" >
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="App" asp-action="Index">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="App" asp-action="Contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="App" asp-action="About">About</a>
+                </li>
             </ul>
-        </menu>
-    </header>
-<section class="container">
-    <h2>@ViewBag.Title</h2>
+        </div>
+    </nav>
+</header>
+<section class="container-fluid">
+    <h2 class="text-center">@ViewBag.Title</h2>
     @RenderBody() <!--This builds the body around this information. -->
 </section>
 <footer class="container">

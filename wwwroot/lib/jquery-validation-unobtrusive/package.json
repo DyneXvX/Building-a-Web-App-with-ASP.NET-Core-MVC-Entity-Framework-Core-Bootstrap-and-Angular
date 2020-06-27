@@ -1,4 +1,10 @@
 {
+  "_args": [
+    [
+      "jquery-validation-unobtrusive@3.2.11",
+      "D:\\Windows Directories\\OneDrive\\Documents\\School\\Summer 2020 (Self)\\Pluralsight\\Building a Web App\\DutchTreat"
+    ]
+  ],
   "_from": "jquery-validation-unobtrusive@3.2.11",
   "_id": "jquery-validation-unobtrusive@3.2.11",
   "_inBundle": false,
@@ -19,8 +25,7 @@
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/jquery-validation-unobtrusive/-/jquery-validation-unobtrusive-3.2.11.tgz",
-  "_shasum": "175ee46380385a0e33ed320f255fad321f68f9f5",
-  "_spec": "jquery-validation-unobtrusive@3.2.11",
+  "_spec": "3.2.11",
   "_where": "D:\\Windows Directories\\OneDrive\\Documents\\School\\Summer 2020 (Self)\\Pluralsight\\Building a Web App\\DutchTreat",
   "author": {
     "name": "Microsoft"
@@ -28,12 +33,10 @@
   "bugs": {
     "url": "https://github.com/aspnet/jquery-validation-unobtrusive/issues"
   },
-  "bundleDependencies": false,
   "dependencies": {
     "jquery": ">=1.8",
     "jquery-validation": ">=1.16"
   },
-  "deprecated": false,
   "description": "Add-on to jQuery Validation to enable unobtrusive validation options in data-* attributes.",
   "devDependencies": {
     "gulp": "3.9.1",

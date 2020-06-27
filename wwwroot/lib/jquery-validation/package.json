@@ -1,4 +1,10 @@
 {
+  "_args": [
+    [
+      "jquery-validation@1.19.2",
+      "D:\\Windows Directories\\OneDrive\\Documents\\School\\Summer 2020 (Self)\\Pluralsight\\Building a Web App\\DutchTreat"
+    ]
+  ],
   "_from": "jquery-validation@1.19.2",
   "_id": "jquery-validation@1.19.2",
   "_inBundle": false,
@@ -20,8 +26,7 @@
     "/jquery-validation-unobtrusive"
   ],
   "_resolved": "https://registry.npmjs.org/jquery-validation/-/jquery-validation-1.19.2.tgz",
-  "_shasum": "c602831b0d8c5881400af424e872757ce241eff9",
-  "_spec": "jquery-validation@1.19.2",
+  "_spec": "1.19.2",
   "_where": "D:\\Windows Directories\\OneDrive\\Documents\\School\\Summer 2020 (Self)\\Pluralsight\\Building a Web App\\DutchTreat",
   "author": {
     "name": "Jörn Zaefferer",
@@ -31,8 +36,6 @@
   "bugs": {
     "url": "https://github.com/jquery-validation/jquery-validation/issues"
   },
-  "bundleDependencies": false,
-  "deprecated": false,
   "description": "Client-side form validation made easy",
   "devDependencies": {
     "commitplease": "2.3.1",
